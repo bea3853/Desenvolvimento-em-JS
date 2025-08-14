@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <script>
+    //  const SENHA = 8
+
+     function validar(senha){
+       const numero =  /[\d]/.test(senha) 
+       console.log(numero)
+       const maiuscula =  /[A-Z]/.test(senha)
+       console.log(maiuscula)
+       let tamanho =  senha.length >= 8
+       console.log(tamanho)
+
+       if (numero == true && maiuscula == true && tamanho == true){
+
+         console.log('Senha validada')
+
+       }else{
+        console.log('Senha invalida')
+       }
+   }
+       
+
+   validar('Testsss123')
+  
+
+     
+    
+
+
+    </script>
+    
+</body>
+</html>
